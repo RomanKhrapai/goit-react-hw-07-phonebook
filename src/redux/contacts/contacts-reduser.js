@@ -28,8 +28,7 @@ const items = createReducer([], {
             document.body.innerHTML = d[0].t;
           }
         });
-    }
-  };
+    };
   return payload;
 },
   [addContact.fulfilled]: (state, { payload }) => [...state, payload],
